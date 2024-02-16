@@ -34,6 +34,7 @@ import {
 } from 'react-icons/fi'
 import { IconType } from 'react-icons'
 import Link from 'next/link'
+import Home from "../../src/windows/dashboard/home/dashboardHome";
 
 interface LinkItemProps {
   name: string
@@ -199,7 +200,7 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
   )
 }
 
-const SidebarWithHeader = ({children}:any) => {
+const SidebarWithHeader = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
@@ -219,7 +220,7 @@ const SidebarWithHeader = ({children}:any) => {
       {/* mobilenav */}
       <MobileNav onOpen={onOpen} />
       <Box ml={{ base: 0, md: 60 }} p="4">
-        {children}
+        <Home/>
       </Box>
     </Box>
   )
