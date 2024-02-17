@@ -14,7 +14,7 @@ export default function NavItems({navSize , icon ,title ,active}:any) {
                     p={1.5}
                     borderRadius={8}
                     _hover={{textDecor:"none",backgroundColor: "#AEC8CA"}}
-                    w={navSize == "large" && "100%"}
+                    // width={navSize == "large" && "100%"}
                 >
                     <MenuButton w={"100%"}>
                         <Flex>
